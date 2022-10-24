@@ -58,7 +58,7 @@ class Store():
         new_customer['current_video_rentals'] = ''
         self.customers.append(new_customer)
         print(self.customers)
-        return print(new_customer)
+        return print(f'Welcome Valued Customer your account is now active.')
 
     def rent_video_to_customer(self,user_movie, user_id):
         length = len(self.customers)
@@ -108,7 +108,7 @@ class Store():
         else:
             self.customers[user_id]['current_video_rentals'] = self.customers[user_id]['current_video_rentals'] + f'/{user_movie}'
         print(self.customers)
-        return print('Enjoy your Movie! Inventory has been updated.')
+        return print('Enjoy your Movie! Your account and  Inventory has been updated.')
     
     def return_video(self, user_id, user_movie):
         vid_list = []
@@ -138,7 +138,7 @@ class Store():
         self.customers[user_index]['current_video_rentals'] = new_list
         print(self.customers)
         print(self.inventory)
-        return print('Your Movie has been returned and restocked in inventory.')
+        return print('Your Movie has been returned Your account updated and restocked in inventory.')
             
        
       
